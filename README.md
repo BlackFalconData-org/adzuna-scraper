@@ -1,6 +1,6 @@
 # Adzuna Job Scraper
 
-Extract structured data from [adzuna.com](https://adzuna.com) — adzuna.com — the global job board with 20+ country markets. Structured salary (min/max/currency), location coordinates, and job change monitoring.
+Extract structured data from [adzuna.com](https://adzuna.com) — the global job board with 20+ country markets. Structured salary (min/max/currency), location coordinates, and job change monitoring.
 
 **[Adzuna Job Scraper on Apify →](https://apify.com/blackfalcondata/adzuna-scraper)**
 
@@ -98,4 +98,4 @@ Each listing gets a content hash. On subsequent runs, only new or changed listin
 
 ---
 
-*Last updated: 2026 03*
+*Last updated: 2026-03-30*
