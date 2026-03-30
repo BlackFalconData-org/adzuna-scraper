@@ -60,10 +60,20 @@ Monitor listings, track trends, and analyze market dynamics with structured, ded
 
 ## FAQ
 
-<!-- WRITE: 4-6 Q&A pairs relevant to this product -->
+**Do I need an Adzuna account?**
+Yes — a free API key is required. Register at [developer.adzuna.com](https://developer.adzuna.com) and pass `appId` and `appKey` as input. Registration is free and takes under a minute.
 
-**Is it legal to scrape adzuna.com?**
-Web scraping of publicly available data is generally legal. This actor only accesses publicly visible information. Always check the target site's terms of service for your specific use case.
+**How many results can I fetch?**
+Up to the total available for your query (typically thousands per market). Set `maxResults` to control the cap. For broad queries like "software engineer" in GB, 10,000+ results are available.
+
+**Are descriptions full-length?**
+Adzuna's API truncates descriptions to ~500 characters at the source — this is an API limitation, not a scraper limitation. Full descriptions are not available via the API.
+
+**Which countries are supported?**
+20+ markets including GB, US, AU, CA, DE, FR, NL, BE, AT, IT, ES, BR, IN, MX, SG, PL, NZ, ZA, RU, and AR.
+
+**Is it legal to use this data?**
+This actor uses Adzuna's official public API. All data accessed is publicly available. Review Adzuna's API terms of service for your specific use case.
 
 **How does incremental mode work?**
 Each listing gets a content hash. On subsequent runs, only new or changed listings are emitted — saving time, compute, and storage.
@@ -72,10 +82,11 @@ Each listing gets a content hash. On subsequent runs, only new or changed listin
 
 ## Known limitations
 
-<!-- WRITE: 4-6 honest limitations -->
-
-- <!-- WRITE: limitation 1 -->
-- <!-- WRITE: limitation 2 -->
+- Descriptions are truncated to ~500 characters — this is enforced by Adzuna's API, not this scraper
+- No contact details (email/phone) — Adzuna does not expose employer contact data via their API
+- No company website or headcount — not available in the Adzuna API response
+- No direct apply URL — `url` is Adzuna's redirect link, not the employer's direct application page
+- No job expiry date — not provided by the Adzuna API
 
 ---
 
