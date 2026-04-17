@@ -8,13 +8,15 @@ Extract structured data from [adzuna.com](https://adzuna.com) — the global job
 
 ## Key features
 
+
 **Incremental mode** — Only get new or changed listings since your last run. Content hash per listing — no duplicates, no re-processing.
 
-**Structured data** — 24 fields per listing. Clean JSON output with consistent field naming. All fields always present — null when unavailable, never omitted.
+**Structured data** — 30 fields per listing. Clean JSON output with consistent field naming. All fields always present — null when unavailable, never omitted.
 
 ---
 
 ## Use cases
+
 
 **Data pipeline automation**
 Integrate with your ETL pipeline to collect structured listings from adzuna.com on a schedule. Export to CSV, JSON, or directly to your database. Use compact mode to control output size.
@@ -91,6 +93,7 @@ Each listing gets a content hash. On subsequent runs, only new or changed listin
 ---
 
 ## Related products by Black Falcon Data
+
 
 - [StepStone Scraper](https://github.com/BlackFalconData-org/stepstone-scraper) — Job listings from 18 European portals
 - [Indeed Job Scraper](https://github.com/BlackFalconData-org/indeed-job-scraper) — Indeed job listings with salary data
